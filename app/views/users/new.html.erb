@@ -1,0 +1,46 @@
+<div style="text-align:center;">
+<h1>New User Details</h1>
+  
+<%= form_with model: @user do |form| %>
+
+  <div>
+    <%= form.label :email %><br>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :user_pan_card %><br>
+    <%= form.text_field :user_pan_card %>
+  </div>
+
+  <div>
+    <%= form.label :user_adhar_number %><br>
+    <%= form.text_field :user_adhar_number %>
+  </div>
+
+  <div>
+    <%= form.label :bank_account_number %><br>
+    <%= form.text_field :bank_account_number %>
+  </div>
+
+  <div>
+    <%= form.label :bank_account_ifsc %><br>
+    <%= form.text_field :bank_account_ifsc %>
+  </div>
+
+  <div>
+    <%= form.label :money_inflow_in_account %><br>
+    <%= form.text_field :money_inflow_in_account %>
+  </div>
+
+  <div>
+    <%= form.label :money_outflow_in_account %><br>
+    <%= form.text_field :money_outflow_in_account %>
+  </div>
+  <br>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+</div>
