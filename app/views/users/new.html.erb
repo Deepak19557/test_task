@@ -1,7 +1,27 @@
-<div style="text-align:center;">
+
 <h1>New User Details</h1>
   
 <%= form_with model: @user do |form| %>
+
+  <div>
+    <%= form.label :facebook %><br>
+    <%= form.check_box :facebook %>
+  </div>
+
+  <div>
+    <%= form.label :linkedin %><br>
+    <%= form.check_box :linkedin %>
+  </div>
+
+  <div>
+    <%= form.label :twitter %><br>
+    <%= form.check_box :twitter %>
+  </div>
+
+  <div>
+    <%= form.label :already_loan %><br>
+    <%= form.check_box :already_loan %>
+  </div>
 
   <div>
     <%= form.label :email %><br>
@@ -37,10 +57,10 @@
     <%= form.label :money_outflow_in_account %><br>
     <%= form.text_field :money_outflow_in_account %>
   </div>
+
   <br>
   <div>
     <%= form.submit %>
   </div>
 <% end %>
 
-</div>

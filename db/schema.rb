@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_22_074954) do
+ActiveRecord::Schema.define(version: 2021_10_23_160302) do
 
   create_table "users", force: :cascade do |t|
     t.string "email"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2021_10_22_074954) do
     t.string "money_outflow_in_account"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "score"
   end
 
 end
