@@ -1,1 +1,19 @@
-<h1 style="text-align: center;"><%= link_to "Credit Card Loan Form", new_user_path %></h1>
+<br>
+<h1><%= link_to "Credit Card Loan Form", new_user_path %></h1>
+<div style="text-align: center;">
+<table border="2">
+	<tr>
+	<th>Email</th>
+	<th>Credit Limit</th>
+	<th>System Recomendation</th>
+  </tr>
+  <% @users.each do |user| %>
+	  <tr>
+	  	<td><%= user.email %> </td>
+	  	<td><%= user.credit_limit %> </td>
+	  	<% message = user.score.to_i > 2 ? "Loan Accepted " : "Loan Rejected" %>
+	  	<td><%= message %></td>
+	  </tr>
+  <% end %>
+</table>
+</div>
