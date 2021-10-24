@@ -3,12 +3,14 @@
 <div style="text-align: center;">
 <table border="2">
 	<tr>
+	<th>ID</th>
 	<th>Email</th>
 	<th>Credit Limit</th>
 	<th>System Recomendation</th>
   </tr>
   <% @users.each do |user| %>
 	  <tr>
+	  	<td><%= user.id %> </td>
 	  	<td><%= user.email %> </td>
 	  	<td><%= user.credit_limit %> </td>
 	  	<% message = user.score.to_i > 2 ? "Loan Accepted " : "Loan Rejected" %>
