@@ -1,21 +1,25 @@
 <br>
-<h1><%= link_to "Credit Card Loan Form", new_user_path %></h1>
-<div style="text-align: center;">
-<table border="2">
-	<tr>
-	<th>ID</th>
-	<th>Email</th>
-	<th>Credit Limit</th>
-	<th>System Recomendation</th>
-  </tr>
-  <% @users.each do |user| %>
-	  <tr>
-	  	<td><%= user.id %> </td>
-	  	<td><%= user.email %> </td>
-	  	<td><%= user.credit_limit %> </td>
-	  	<% message = user.score.to_i > 2 ? "Loan Accepted " : "Loan Rejected" %>
-	  	<td><%= message %></td>
-	  </tr>
-  <% end %>
-</table>
-</div>
+<h1 style="text-align:center;"><%= link_to "Credit Card Loan Form", new_user_path %></h1>
+<table class="table table-striped table-bordered table-hover friend_list">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Credit Limit</th>
+            <th>System Recomendation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @users.each do |work| %>
+            <tr class="size">
+                <td><%= work.id %></td>
+                <td><%= work.email %></td>
+                <td><%= work.credit_limit %></td>
+                <% message = work.score.to_i > 2 ? "Loan Accepted " : "Loan Rejected" %>
+                <td><%= message %></td>
+            </tr>
+        <% end%>
+    </tbody>
+</table> 
+<br><br><br>
+

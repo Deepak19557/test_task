@@ -12,3 +12,5 @@ class Api::V2::CreditsController < ApplicationController
 	response = JSON.parse response.body
 
 end
+
+

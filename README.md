@@ -1,24 +1,24 @@
 # README
 
 This README would normally document whatever steps are necessary to get the
-application up and running.
+Application Process Details:- 
 
-Things you may want to cover:
+0> Made credit card loan Form for filling user Details.
 
-* Ruby version
+1> Made one Model Name User(for storing database).
 
-* System dependencies
+2> made one method name is  credit_limit_formula for calculate credit limit and also made field credit_limit in user model.
 
-* Configuration
+3> show credit_limit after submit the form on result page.
 
-* Database creation
+4> made result method for calculate the credibility_score.
 
-* Database initialization
+5> made one score field in user model for storing credibility_score.
 
-* How to run the test suite
+6> credibility_score decide loan is approved or reject.
 
-* Services (job queues, cache servers, search engines, etc.)
+7> show all the applied loans records in index 
 
-* Deployment instructions
 
-* ...
+
+

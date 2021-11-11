@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   def result
     @credit_limit = User.last.credit_limit
-    @message = User.last.score.to_i > 2 ? "Your loan request is accepted" : "Your loan request is rejected because your credibility is less than 2"
+    @message = User.last.score.to_i > 2 ? "Your loan is approved" : "Your loan request is rejected because your credibility is less than 2"
   end
 
   def create

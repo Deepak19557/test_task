@@ -1,66 +1,69 @@
 
-<h1>New User Loan Form</h1>
+<h1 style="text-align:center; color: black;">New User Loan Form</h1>
   
 <%= form_with model: @user do |form| %>
+  <div class="container">
 
-  <div>
-    <%= form.label :facebook %><br>
+  <div class="field form-group">
+      <%= form.text_field :email ,class:"form-control",placeholder:"Email" %><br>
+  </div>
+
+  <div class="field form-group">
+    <%= form.text_field :user_pan_card, class:"form-control",placeholder:"User Pan Card" %><br>
+  </div>
+
+  <div class="field form-group" >
+    <%= form.text_field :user_adhar_number,class:"form-control",placeholder:"User Adhar Number" %><br>
+  </div>
+
+  <div class="field form-group">
+    <%= form.text_field :bank_account_number,class:"form-control",placeholder:"Bank Account Number" %><br>
+  </div>
+
+  <div class="field form-group">
+    <%= form.text_field :bank_account_ifsc,class:"form-control",placeholder:"Bank Account Ifsc" %><br>
+  </div>
+
+  <div class="field form-group">
+    <%= form.text_field :money_inflow_in_account,class:"form-control",placeholder:"Money Inflow In Account" %><br>
+  </div>
+
+  <div class="field form-group">
+    <%= form.text_field :money_outflow_in_account,class:"form-control",placeholder:"Money Outflow In Account" %><br>
+  </div>
+
+  <h1> Credibility Score Profile: </h1>
+
+  <div class="field form-group">
+    <%= form.label :facebook %>
     <%= form.check_box :facebook %>
   </div>
 
-  <div>
-    <%= form.label :linkedin %><br>
+  <div class="field form-group">
+    <%= form.label :linkedin %>
     <%= form.check_box :linkedin %>
   </div>
 
-  <div>
-    <%= form.label :twitter %><br>
+  <div class="field form-group">
+    <%= form.label :twitter %>
     <%= form.check_box :twitter %>
   </div>
 
-  <div>
-    <%= form.label :already_loan %><br>
+  <div class="field form-group">
+    <%= form.label :already_loan %>
     <%= form.check_box :already_loan %>
-  </div>
-
-  <div>
-    <%= form.label :email %><br>
-    <%= form.text_field :email %>
-  </div>
-
-  <div>
-    <%= form.label :user_pan_card %><br>
-    <%= form.text_field :user_pan_card %>
-  </div>
-
-  <div>
-    <%= form.label :user_adhar_number %><br>
-    <%= form.text_field :user_adhar_number %>
-  </div>
-
-  <div>
-    <%= form.label :bank_account_number %><br>
-    <%= form.text_field :bank_account_number %>
-  </div>
-
-  <div>
-    <%= form.label :bank_account_ifsc %><br>
-    <%= form.text_field :bank_account_ifsc %>
-  </div>
-
-  <div>
-    <%= form.label :money_inflow_in_account %><br>
-    <%= form.text_field :money_inflow_in_account %>
-  </div>
-
-  <div>
-    <%= form.label :money_outflow_in_account %><br>
-    <%= form.text_field :money_outflow_in_account %>
   </div>
 
   <br>
   <div>
-    <%= form.submit %>
+   <h4 style="text-align:center;">
+    <%= form.submit class: "btn btn-primary" %>
+   </h4> 
+     
   </div>
+</div>
 <% end %>
+
+
+
 
