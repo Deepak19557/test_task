@@ -7,4 +7,7 @@ class User < ApplicationRecord
      def rspeccss
         puts 'rspec'
     end
+    def rspeccsssssss
+        puts "hello world"
+    end
 end
