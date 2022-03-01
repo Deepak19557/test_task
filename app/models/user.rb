@@ -4,4 +4,7 @@ class User < ApplicationRecord
     def rspec
         puts 'rspec'
     end
+     def rspecc
+        puts 'rspec'
+    end
 end
